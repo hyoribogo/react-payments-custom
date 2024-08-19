@@ -3,7 +3,7 @@ const CardAdd = () => {
     <div>
       <h1>CardAdd</h1>
     </div>
-  )
-}
+  );
+};
 
-export default CardAdd
+export default CardAdd;

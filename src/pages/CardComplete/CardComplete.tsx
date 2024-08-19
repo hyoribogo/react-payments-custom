@@ -3,7 +3,7 @@ const CardComplete = () => {
     <div>
       <h1>CardComplete</h1>
     </div>
-  )
-}
+  );
+};
 
-export default CardComplete
+export default CardComplete;

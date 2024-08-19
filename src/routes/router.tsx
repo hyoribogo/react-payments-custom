@@ -1,6 +1,6 @@
-import { createBrowserRouter } from 'react-router-dom'
-import { PATH } from './constants'
-import { CardAdd, CardComplete, CardList } from '@/pages'
+import { createBrowserRouter } from "react-router-dom";
+import { PATH } from "./constants";
+import { CardAdd, CardComplete, CardList } from "@/pages";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +15,6 @@ const router = createBrowserRouter([
     path: PATH.CARD_COMPLETE,
     element: <CardComplete />,
   },
-])
+]);
 
-export default router
+export default router;

@@ -1,7 +1,7 @@
 {
   "main": "index.js",
   "keywords": [],
-  "author": "",
+  "author": "hyoribogo",
   "license": "ISC",
   "name": "react-payments-custom",
   "description": "프로그래머스 수강생과 함께하는 결제모듈 클린코드 미션",
@@ -16,7 +16,14 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "preview": "vite preview",
+    "lint-staged": "lint-staged",
     "lint:style": "stylelint \"src/**/*.(ts|tsx)\" --fix"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -32,6 +39,7 @@
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
@@ -40,10 +48,18 @@
     "@vitest/coverage-v8": "^2.0.3",
     "@vitest/ui": "^2.0.5",
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.8.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "husky": "^9.1.4",
     "jsdom": "^24.1.0",
+    "lint-staged": "^15.2.9",
     "postcss-styled-syntax": "^0.6.4",
+    "prettier": "^3.3.3",
     "stylelint": "^16.8.1",
     "stylelint-config-recess-order": "^5.0.1",
     "stylelint-config-standard": "^36.0.1",
